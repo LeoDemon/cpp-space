@@ -1,0 +1,6 @@
+<Projects version="2.0">
+	<Project active="1">AddTest.cfp</Project>
+	<Project active="0">..\AddPro\AddPro.cfp</Project>
+	<File active="1">main.cpp</File>
+	<File active="0">..\AddPro\lib.cpp</File>
+</Projects>

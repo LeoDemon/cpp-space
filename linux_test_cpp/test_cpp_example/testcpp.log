@@ -1,0 +1,36 @@
+...in testcpp...
+argc==1
+argv[0]==d:\Workspace\space_for_study\C__Space\test_cpp_example\testcpp.exe
+******begin test the course examples******
+******end test the course examples******
+******begin test the else examples******
+...in TestTemp5...
+Hello, how are you ? 
+vecStr.max_size()==1073741823
+vecStr.size()==5
+vecStr.capacity()==5
+Hello, you are always how 
+vecStr.max_size()==1073741823
+vecStr.size()==5
+vecStr.capacity()==10
+...out TestTemp5...
+******end test the else examples******
+...out testcpp...
+...in testcpp...
+argc==1
+argv[0]==d:\Workspace\space_for_study\C__Space\test_cpp_example\testcpp.exe
+******begin test the course examples******
+******end test the course examples******
+******begin test the else examples******
+...in TestTemp5...
+Hello, how are you ? 
+vecStr.max_size()==1073741823
+vecStr.size()==5
+vecStr.capacity()==5
+Hello, you are always how 
+vecStr.max_size()==1073741823
+vecStr.size()==5
+vecStr.capacity()==10
+...out TestTemp5...
+******end test the else examples******
+...out testcpp...

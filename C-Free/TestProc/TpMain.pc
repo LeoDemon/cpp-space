@@ -1,0 +1,125 @@
+/*!
+@file: TpMain.pc
+@brief: Test Pro*C program sample 1
+@date:2012-1-17
+@build:make s1 –f Makefile
+@author:lijha 
+@remarks:按照proc案例修改学习 
+*/
+
+#include <stdio.h>
+#include <string.h>
+/*包含上SQLCA，可用#include 和EXEC SQL INCLUDE sqlca 两种方式*/
+#include <sqlca.h>
+
+/* 定义Oracle数据库用户名长度和密码长度 */
+#define UNAME_LEN 20
+#define PWD_LEN 40
+#define DBNAME_LEN 30
+
+/* 如果MODE=ORACLE，则定义变量不需要BEGIN DECLARE SECTION…等*/
+/* VARCHAR是一个Oracle支持的结构类型，可以用小写书写 */
+EXEC SQL BGEIN DECLARE SECTION 
+VARCHAR username[UNAME_LEN]; /*存储DB用户名的宿主变量*/
+VARCHAR password[PWD_LEN]; /*存储DB密码的宿主变量*/
+VARCHAR dbname[DBNAME_LEN];
+
+EXEC SQL END DECLARE SECTION 
+
+/*定义一个结构类型的宿主变量，接收Oracle数据到应用程序*/
+struct
+{
+    VARCHAR emp_name[UNAME_LEN];
+    float salary;
+    float commission;
+} emprec;
+
+/*定义一个结构类型的指示变量，用于为上面的结构类型宿主变量提供状态指示*/
+struct
+{
+    short emp_name_ind; /*指示型变量，类型必须为short*/
+    short sal_ind;
+    short comm_ind;
+} emprec_ind;
+
+/*定义用于输入的宿主变量*/
+int emp_number;
+int total_queried;
+
+/*声明错误处理函数*/
+void sql_error(char *);
+
+int main(int argc,char **argv)
+{
+    char temp_char[32];
+    
+    /*给存放用户名和密码的宿主变量赋值，注意是varchar类型，一个c结构*/
+    strncpy((char *) username.arr, "spmsnow", UNAME_LEN);
+    username.len = strlen((char *) username.arr);
+    
+    strncpy((char *) password.arr, "spmsnow", PWD_LEN);
+    password.len = strlen((char *) password.arr);
+    
+    strncpy((char *) dbname.arr,"AHCENTERTEST",DBNAME_LEN));
+    dbname.len = strlen((char *)dbname.arr);
+    
+
+	CONNECT :username IDENTIFIED BY :password USING :dbname;
+    printf("\nConnected to %s as user: %s\n", dbname.arr,username.arr);
+    
+    total_queried = 0;
+    for (;;)
+    {
+        /*无数据找到时跳出循环*/
+        EXEC SQL WHENEVER NOT FOUND DO break;
+        for (;;)
+        {
+            emp_number = 0;
+            printf("\nEnter employee number (0 to quit): ");
+            
+            gets(temp_char);
+            emp_number = atoi(temp_char);
+            if (emp_number == 0)
+                break;
+                
+            EXEC SQL SELECT ename, sal, NVL(comm, 0) INTO :emprec INDICATOR :emprec_ind\
+            FROM EMP WHERE EMPNO = :emp_number;
+            
+            printf("\n\nEmployee\tSalary\t\tCommission\n");
+            printf("--------\t------\t\t----------\n");
+            
+            emprec.emp_name.arr[emprec.emp_name.len] = '\0';
+            printf("%-8s\t%6.2f\t\t",emprec.emp_name.arr, emprec.salary);
+            
+            if (emprec_ind.comm_ind == -1)
+                printf("NULL\n");
+            else
+                printf("%6.2f\n", emprec.commission);
+                
+            total_queried++;
+        }
+        if (emp_number == 0) break;
+        
+        printf("\nNot a valid employee number - try again.\n");
+    }
+    printf("\n\nTotal rows returned was %d.\n", total_queried);
+    //printf("\nG’day.\n\n\n");
+    
+    /* 从数据库断开连接*/
+    EXEC SQL COMMIT WORK RELEASE;
+    return 0;
+}
+
+void sql_error(char *msg)
+{
+    char err_msg[128];
+    int buf_len, msg_len;
+    EXEC SQL WHENEVER SQLERROR CONTINUE;
+    printf("\n%s\n", msg);
+    buf_len = sizeof (err_msg);
+    /*得到错误信息的文字描述*/
+    sqlglm(err_msg, &buf_len, &msg_len);
+    printf("%.*s\n", msg_len, err_msg);
+    EXEC SQL ROLLBACK RELEASE;
+    exit(1);
+}

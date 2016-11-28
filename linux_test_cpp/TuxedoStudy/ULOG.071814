@@ -1,0 +1,72 @@
+144547.Leo-Linux!BBL.22024.1746016064.0: 07-18-2014: client high water (0), total client (0)
+144547.Leo-Linux!BBL.22024.1746016064.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+144547.Leo-Linux!BBL.22024.1746016064.0: LIBTUX_CAT:262: INFO: Standard main starting
+144547.Leo-Linux!WSL.22025.1907873600.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+144547.Leo-Linux!WSL.22025.1907873600.0: LIBTUX_CAT:262: INFO: Standard main starting
+144547.Leo-Linux!WSL.22025.1907873600.0: WSNAT_CAT:1008: ERROR: Could not establish listening address on network //192.168.1.100:9999
+144547.Leo-Linux!WSL.22025.1907873600.0: LIBTUX_CAT:250: ERROR: tpsvrinit() failed
+144547.Leo-Linux!tmboot.22023.3850192704.-2: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+144547.Leo-Linux!tmboot.22023.3850192704.-2: CMDTUX_CAT:825: ERROR: Process WSL at Linux failed with /T tperrno (TPESYSTEM - internal system error)
+144547.Leo-Linux!tux_server.22026.3636741952.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+144547.Leo-Linux!tux_server.22026.3636741952.0: LIBTUX_CAT:262: INFO: Standard main starting
+144547.Leo-Linux!tux_server.22026.3636741952.0: LIBTUX_CAT:525: INFO: Default tpsvrinit() function used
+144630.Leo-Linux!tux_server.22026.3636741952.0: LIBTUX_CAT:522: INFO: Default tpsvrdone() function used
+144633.Leo-Linux!BBL.22024.1746016064.0: CMDTUX_CAT:26: INFO: The BBL is exiting system
+145655.Leo-Linux!tmloadcf.22252.2931259200.-2: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+145655.Leo-Linux!tmloadcf.22252.2931259200.-2: CMDTUX_CAT:872: INFO: TUXCONFIG file /home/leodemon/Study/workspace/space-for-study/cpp-space/linux_test_cpp/tux_config/tuxconfig has been updated
+145705.Leo-Linux!BBL.22255.2642745152.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+145705.Leo-Linux!BBL.22255.2642745152.0: LIBTUX_CAT:262: INFO: Standard main starting
+145705.Leo-Linux!WSL.22256.1526466368.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+145705.Leo-Linux!WSL.22256.1526466368.0: LIBTUX_CAT:262: INFO: Standard main starting
+145705.Leo-Linux!WSL.22256.1526466368.0: WSNAT_CAT:1008: ERROR: Could not establish listening address on network //192.168.1.100:25101
+145705.Leo-Linux!WSL.22256.1526466368.0: LIBTUX_CAT:250: ERROR: tpsvrinit() failed
+145705.Leo-Linux!tmboot.22254.1317644096.-2: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+145705.Leo-Linux!tmboot.22254.1317644096.-2: CMDTUX_CAT:825: ERROR: Process WSL at Linux failed with /T tperrno (TPESYSTEM - internal system error)
+145705.Leo-Linux!JSL.22257.3675404096.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+145705.Leo-Linux!JSL.22257.3675404096.0: LIBTUX_CAT:262: INFO: Standard main starting
+145705.Leo-Linux!JSL.22257.3675404096.0: INFO: JOLT Listener version-Oracle Jolt 12.1.1.0
+145705.Leo-Linux!JSL.22257.3675404096.0: JOLT_CAT:1100: "ERROR: -n option is required"
+145705.Leo-Linux!JSL.22257.3675404096.0: LIBTUX_CAT:250: ERROR: tpsvrinit() failed
+145705.Leo-Linux!tmboot.22254.1317644096.-2: CMDTUX_CAT:825: ERROR: Process JSL at Linux failed with /T tperrno (TPESYSTEM - internal system error)
+145705.Leo-Linux!tux_server.22258.1116284736.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+145705.Leo-Linux!tux_server.22258.1116284736.0: LIBTUX_CAT:262: INFO: Standard main starting
+145705.Leo-Linux!tux_server.22258.1116284736.0: LIBTUX_CAT:525: INFO: Default tpsvrinit() function used
+145943.Leo-Linux!tux_server.22258.1116284736.0: LIBTUX_CAT:522: INFO: Default tpsvrdone() function used
+145946.Leo-Linux!BBL.22255.2642745152.0: CMDTUX_CAT:26: INFO: The BBL is exiting system
+150014.Leo-Linux!tmloadcf.22306.455907136.-2: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+150014.Leo-Linux!tmloadcf.22306.455907136.-2: CMDTUX_CAT:872: INFO: TUXCONFIG file /home/leodemon/Study/workspace/space-for-study/cpp-space/linux_test_cpp/tux_config/tuxconfig has been updated
+150035.Leo-Linux!BBL.22316.2475218752.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+150035.Leo-Linux!BBL.22316.2475218752.0: LIBTUX_CAT:262: INFO: Standard main starting
+150035.Leo-Linux!tux_server.22317.2504890176.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+150035.Leo-Linux!tux_server.22317.2504890176.0: LIBTUX_CAT:262: INFO: Standard main starting
+150035.Leo-Linux!tux_server.22317.2504890176.0: LIBTUX_CAT:525: INFO: Default tpsvrinit() function used
+153142.Leo-Linux!tux_server.22317.2504890176.0: LIBTUX_CAT:522: INFO: Default tpsvrdone() function used
+153145.Leo-Linux!BBL.22316.2475218752.0: CMDTUX_CAT:26: INFO: The BBL is exiting system
+170229.Leo-Linux!BBL.25267.1243481920.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+170229.Leo-Linux!BBL.25267.1243481920.0: LIBTUX_CAT:262: INFO: Standard main starting
+170231.Leo-Linux!tux_server.25268.3641161536.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+170231.Leo-Linux!tux_server.25268.3641161536.0: LIBTUX_CAT:262: INFO: Standard main starting
+170231.Leo-Linux!tux_server.25268.3641161536.0: LIBTUX_CAT:525: INFO: Default tpsvrinit() function used
+170237.Leo-Linux!tux_server.25268.3641161536.0: LIBTUX_CAT:522: INFO: Default tpsvrdone() function used
+170240.Leo-Linux!BBL.25267.1243481920.0: CMDTUX_CAT:26: INFO: The BBL is exiting system
+175245.Leo-Linux!BBL.29301.3392218944.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+175245.Leo-Linux!BBL.29301.3392218944.0: LIBTUX_CAT:262: INFO: Standard main starting
+175245.Leo-Linux!tux_server.29302.963110720.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+175245.Leo-Linux!tux_server.29302.963110720.0: LIBTUX_CAT:262: INFO: Standard main starting
+175245.Leo-Linux!tux_server.29302.963110720.0: LIBTUX_CAT:525: INFO: Default tpsvrinit() function used
+175249.Leo-Linux!tux_server.29302.963110720.0: LIBTUX_CAT:522: INFO: Default tpsvrdone() function used
+175252.Leo-Linux!BBL.29301.3392218944.0: CMDTUX_CAT:26: INFO: The BBL is exiting system
+180634.Leo-Linux!BBL.4426.1602914112.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+180634.Leo-Linux!BBL.4426.1602914112.0: LIBTUX_CAT:262: INFO: Standard main starting
+180634.Leo-Linux!tux_server.4435.2453497664.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+180634.Leo-Linux!tux_server.4435.2453497664.0: LIBTUX_CAT:262: INFO: Standard main starting
+180634.Leo-Linux!tux_server.4435.2453497664.0: LIBTUX_CAT:525: INFO: Default tpsvrinit() function used
+181515.Leo-Linux!BBL.10770.1289189184.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+181515.Leo-Linux!BBL.10770.1289189184.0: LIBTUX_CAT:577: ERROR: Unable to register because the slot is already owned by another process
+181515.Leo-Linux!BBL.10770.1289189184.0: LIBTUX_CAT:248: ERROR: System init function failed, Uunixerr = 
+181515.Leo-Linux!BBL.10770.1289189184.0: CMDTUX_CAT:26: INFO: The BBL is exiting system
+181515.Leo-Linux!tux_server.10771.3500431168.0: 07-18-2014: Tuxedo Version 12.1.1.0, 64-bit
+181515.Leo-Linux!tux_server.10771.3500431168.0: LIBTUX_CAT:223: WARN: Duplicate server
+181515.Leo-Linux!tux_server.10771.3500431168.0: LIBTUX_CAT:248: ERROR: System init function failed, Uunixerr = 
+181520.Leo-Linux!tux_server.4435.2453497664.0: LIBTUX_CAT:522: INFO: Default tpsvrdone() function used
+181523.Leo-Linux!BBL.4426.1602914112.0: CMDTUX_CAT:26: INFO: The BBL is exiting system

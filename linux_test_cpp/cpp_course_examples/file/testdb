@@ -1,0 +1,21 @@
+use testdb;
+select * from ts_module_dict;
+set autocommit=0;
+delete from ts_module_dict where module_id='1';
+
+create table ts_method_dict (
+METHOD_NO  varchar(127) not null,
+MODULE_ID  int unsigned not null,
+method_name varchar(255) not null,
+METHOD_desc varchar(1024)
+);
+
+ insert into ts_module_dict(module_id,module_name,dll_name,module_desc)
+values(1,'C++程序设计课程学习案例动态库','libcourse.so','C++程序设计课程学习案例动态库');
+insert into ts_module_dict(module_id,module_name,dll_name,module_desc)
+values(2,'C++ Primer学习案例动态库','libcourse.so','C++ Primer学习案例动态库');
+
+create unique index uni_ts_module_dict_idx on ts_module_dict(module_id);
+create unique index uni_ts_method_dict_idx on ts_method_dict(method_no);
+
+--commit;

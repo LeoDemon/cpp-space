@@ -1,0 +1,38 @@
+*RESOURCES
+IPCKEY		235688
+DOMAINID	TuxedoStudy
+MASTER		Linux
+MAXACCESSERS	150
+MAXSERVERS	100
+MAXSERVICES	200
+MODEL		SHM
+LDBAL		N
+
+*MACHINES
+"Leo-Linux"        LMID=Linux
+APPDIR="/home/leodemon/Study/workspace/space-for-study/cpp-space/linux_test_cpp/TuxedoStudy"
+TUXCONFIG="/home/leodemon/Study/workspace/space-for-study/cpp-space/linux_test_cpp/tux_config/tuxconfig"
+TUXDIR="/opt/tuxedo/tuxedo12.1.1.0"
+MAXWSCLIENTS=10 
+*GROUPS
+GROUP1 LMID=Linux GRPNO=1	OPENINFO=NONE
+#GROUP2 LMID=Linux GRPNO=10	OPENINFO=NONE
+#GROUP3 LMID=Linux GRPNO=20	OPENINFO=NONE
+
+*SERVERS
+DEFAULT:
+CLOPT="-A"
+RESTART=Y GRACE=0 MAXGEN=10
+
+#WSL SRVGRP=GROUP2 SRVID=4 RESTART=Y MAXGEN=10
+#CLOPT= "-A -t -- -n //192.168.1.100:25101 -m10 -M50 -x10 -K both -c 10204"
+#
+#JSL SRVGRP=GROUP3 SRVID=5 RESTART=Y GRACE=0 MAXGEN=10
+#CLOPT= "-A -t -- -n //192.168.1.100:25201 -m10 -M50 -x10"
+
+tux_server	SRVGRP=GROUP1 SRVID=1 CONV=N MIN=1 MAX=1
+CLOPT="-A -r -t -o /home/leodemon/Study/workspace/space-for-study/cpp-space/linux_test_cpp/TuxedoStudy/tux_server.log"  
+
+*SERVICES
+TOUPPER
+

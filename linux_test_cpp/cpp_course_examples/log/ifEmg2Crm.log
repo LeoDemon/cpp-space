@@ -1,0 +1,11 @@
+++++++in ChkProgNum++++++
+++++++check process num==1
+++++++++++deamon start begin++++++++++
++++++++++father process exit+++++++++
++++++++++the 1st child process exit+++++++++
+++++++++++deamon start finish++++++++++
+++++++++++get data from cfg++++++++++
+++++++++++Lib init++++++++++
+0715182811.819|WARN||CLDebugFunc|@523@/crmcb/run/framework/src/border/include/libborder.h> enter OrderInit.
+0715182811.821|WARN||~CLDebugFunc|@531@/crmcb/run/framework/src/border/include/libborder.h> leave OrderInit.
+++++++++++ifEmg2Crm同步进程启动成功++++++++++

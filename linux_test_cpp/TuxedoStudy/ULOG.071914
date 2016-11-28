@@ -1,0 +1,8 @@
+133025.Leo-Linux!BBL.21360.745506624.0: 07-19-2014: client high water (0), total client (0)
+133025.Leo-Linux!BBL.21360.745506624.0: 07-19-2014: Tuxedo Version 12.1.1.0, 64-bit, Patch Level (none)
+133025.Leo-Linux!BBL.21360.745506624.0: LIBTUX_CAT:262: INFO: Standard main starting
+133025.Leo-Linux!tux_server.21361.1709811520.0: 07-19-2014: Tuxedo Version 12.1.1.0, 64-bit
+133025.Leo-Linux!tux_server.21361.1709811520.0: LIBTUX_CAT:262: INFO: Standard main starting
+133025.Leo-Linux!tux_server.21361.1709811520.0: LIBTUX_CAT:525: INFO: Default tpsvrinit() function used
+133119.Leo-Linux!tux_server.21361.1709811520.0: LIBTUX_CAT:522: INFO: Default tpsvrdone() function used
+133122.Leo-Linux!BBL.21360.745506624.0: CMDTUX_CAT:26: INFO: The BBL is exiting system
